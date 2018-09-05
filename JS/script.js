@@ -15,7 +15,7 @@ prenom = prompt('Veuillez saisir votre prénom');
 age = prompt('Veuillez saisir votre age');
 
 result = 'bonjour je m\'appelle ' + nom + ' ' + prenom + ' et j\'ai ' + age + ' ans';
-
+                                                        //concaténation variables + strings
 alert(result);*/
 
 //#################################################################
@@ -23,16 +23,16 @@ alert(result);*/
 
 /*var age = prompt('Veuillez saisir votre âge :');
 
-if (age < 18) {
+if (age < 18) {                                         //condition if (si age plus petit que 18)
 
 alert('Vous n\'avez pas l\'age requis');
 
 }
-else if (age > 18) {
+else if (age > 18) {                                    //condition if else (sinon si age plus grand que 18)
 
 alert('Bienvenue sur le site');
 }
-else {
+else {                                                  //condition else (sinon)
   alert('Avez-vous saisi un chiffre ?');
 }*/
 
@@ -41,7 +41,7 @@ else {
 
 /*var proceed = true;
 
-do {
+do {                                                  //Boucle do while
 var age = prompt('Veuillez saisir votre âge :');
 if (age < 18) {
 
@@ -56,7 +56,7 @@ proceed = false;
 else {
   alert('Avez-vous saisi un chiffre ?');
 }
-} while (proceed == true); // ou while (proceed);*/
+} while (proceed == true); // ou while (proceed);*/   //Tant que proceed est vrai, on boucle
 
 //#################################################################
 //4_Utilisation des boucles_2
