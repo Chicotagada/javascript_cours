@@ -60,3 +60,73 @@ else {
 
 //#################################################################
 //4_Utilisation des boucles_2
+/*
+var proceed = true;
+    nbrnotes = 0;
+    notesadditionnees = 0;
+    moyenne = 0;
+    notemax = 0;
+    notesaisie = 0;
+var result;
+
+do {
+  notesaisie = parseInt(prompt('Veuillez saisir une note :'));
+
+  if (notesaisie && notesaisie >= 0 && notesaisie <= 20) {
+    nbrnotes++;
+    notesadditionnees += notesaisie;
+
+    if (notesaisie > notemax) {
+      notemax = notesaisie;
+    }
+    else {
+    }
+  }
+  else {
+    proceed = false;
+  }
+} while (proceed == true);
+
+moyenne = notesadditionnees / nbrnotes;
+
+result = 'Moyenne :' +moyenne +' Note max : ' +notemax +' Nombre de notes : ' +nbrnotes;
+
+console.log(result); //affiche les données directement dans la console
+*/
+//#################################################################
+
+var proceed = true;
+    nbrnotes = 0;
+    notesadditionnees = 0;
+    moyenne = 0;
+    notemax = 0;
+    notesaisie = 0;
+    nbrnotessouhaitees = 0;
+var result;
+
+nbrnotessouhaitees = parseInt(prompt('Combien de notes souhaitez-vous saisir ?'));
+
+for (var compteur = 0; nbrnotessouhaitees != compteur ; compteur++) {
+  notesaisie = parseInt(prompt('Veuillez saisir une note :'));
+
+  if (notesaisie && notesaisie >= 0 && notesaisie <= 20) {
+    nbrnotes++;
+    notesadditionnees += notesaisie;
+
+    if (notesaisie > notemax) {
+      notemax = notesaisie;
+    }
+    else {
+    }
+  }
+  else {
+    compteur = compteur -1;
+    alert
+  }
+}
+
+moyenne = notesadditionnees / nbrnotes;
+
+result = 'Moyenne :' +moyenne +' Note max : ' +notemax +' Nombre de notes : ' +nbrnotes;
+
+console.log(result); //affiche les données directement dans la console
