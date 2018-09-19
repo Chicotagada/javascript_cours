@@ -96,12 +96,12 @@ console.log(result); //affiche les données directement dans la console
 //#################################################################
 
 var proceed = true;
-    nbrnotes = 0;
-    notesadditionnees = 0;
-    moyenne = 0;
-    notemax = 0;
-    notesaisie = 0;
-    nbrnotessouhaitees = 0;
+nbrnotes = 0;
+notesadditionnees = 0;
+moyenne = 0;
+notemax = 0;
+notesaisie = 0;
+nbrnotessouhaitees = 0;
 var result;
 
 nbrnotessouhaitees = parseInt(prompt('Combien de notes souhaitez-vous saisir ?'));
@@ -121,7 +121,7 @@ for (var compteur = 0; nbrnotessouhaitees != compteur ; compteur++) {
   }
   else {
     compteur = compteur -1;
-    alert
+    alert('Votre note est non correcte');
   }
 }
 
