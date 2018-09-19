@@ -112,7 +112,7 @@ for (var compteur = 0; nbrnotessouhaitees != compteur ; compteur++) {
   if (notesaisie && notesaisie >= 0 && notesaisie <= 20) {
     nbrnotes++;
     notesadditionnees += notesaisie;
-
+ 
     if (notesaisie > notemax) {
       notemax = notesaisie;
     }
