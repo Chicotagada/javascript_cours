@@ -17,6 +17,47 @@ for (var compteur = 0; nbrnotessouhaitees != compteur ; compteur++) {
   }
 }
 
+function noteMin(tableau){
+  var Noteminimale = 20;
+  for (var compteur = 0; compteur < tableau.length; compteur++) {
+    if (Noteminimale > tableau[compteur]) {
+      Noteminimale = tableau[compteur]
+    } else {
+
+    }
+  }
+  console.log('La note minimale est ' +Noteminimale);
+}
+
+noteMin(mesnotes);
+
+function noteMax(tableau){
+  var NoteMax = 0;
+  for (var compteur = 0; compteur < tableau.length; compteur++) {
+    if (NoteMax < tableau[compteur]) {
+      NoteMax = tableau[compteur]
+    } else {
+
+    }
+  }
+  console.log('La note maximale est ' +NoteMax);
+}
+
+noteMax(mesnotes);
+
+function average(tableau){
+  var moyenne = 0;
+  var totalnoteadditionnees = 0;
+  for (var compteur = 0; compteur < tableau.length; compteur++) {
+    totalnoteadditionnees += tableau[compteur];
+  }
+  moyenne = totalnoteadditionnees / tableau.length;
+
+  console.log('La moyenne est de ' +moyenne);
+}
+
+average(mesnotes);
+
 affichage = mesnotes.join(',');
 
 console.log(affichage);
