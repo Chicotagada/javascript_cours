@@ -2,6 +2,7 @@
 
 var mesnotes = [];
     notesaisie = 0;
+var matieres = {};
 
 nbrnotessouhaitees = parseInt(prompt('Combien de notes souhaitez-vous saisir ?'));
 
@@ -16,7 +17,7 @@ for (var compteur = 0; nbrnotessouhaitees != compteur ; compteur++) {
     alert('Votre note est non correcte');
   }
 }
-
+//fonction qui calcule la note minimale
 function noteMin(tableau){
   var Noteminimale = 20;
   for (var compteur = 0; compteur < tableau.length; compteur++) {
@@ -31,6 +32,7 @@ function noteMin(tableau){
 
 noteMin(mesnotes);
 
+//fonction qui calcule la note maximale
 function noteMax(tableau){
   var NoteMax = 0;
   for (var compteur = 0; compteur < tableau.length; compteur++) {
@@ -45,6 +47,7 @@ function noteMax(tableau){
 
 noteMax(mesnotes);
 
+//fonction qui calcule la moyenne
 function average(tableau){
   var moyenne = 0;
   var totalnoteadditionnees = 0;
@@ -61,3 +64,13 @@ average(mesnotes);
 affichage = mesnotes.join(',');
 
 console.log(affichage);
+
+
+
+
+var matieres2 = {
+    'maths': mesnotes,
+    'science': 12
+};
+
+alert(matieres2.maths);
